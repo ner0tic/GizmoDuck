@@ -6,13 +6,15 @@ global.util       = require('util');
 global.fs         = require('fs');
 global.color      = require("ansi-color").set;
 global.mysql      = require("mysql");
+global.Moment     = require('moment');
 require("datejs");
 
 // Local modules
-global.Database   = require('database.js');
-global.Events     = require('events.js');
-global.Functions  = require('functions.js');
-global.Dictionary = require('dictionary.js');
+global.Database   = require('./database.js');
+global.Events     = require('./events.js');
+global.Functions  = require('./functions.js');
+global.Dictionary = require('./dictionary.js');
+
 
 // Database initialization
 try {

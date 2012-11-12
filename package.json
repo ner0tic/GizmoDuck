@@ -2,17 +2,28 @@
   "name": "GizmoDuck",
   "version": "0.0.1",
   "description": "Turntable.fm bot",
-  "main": "GizmoDuck.js",
+  "main": "./GizmoDuck.js",
   "dependencies": {
     "ttapi": "~1.5.0",
     "mysql": "~0.9.6",
     "util": "~0.4.9"    ,
     "ansi-color": "~0.2.1",
-    "datejs": "~0.0.2"
+    "datejs": "~0.0.2",
+    "moment": "~1.7.2"
   },
   repository: {
     "type": "git",
     "url": "https://github.com/ner0tic/GizmoDuck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ner0tic/GizmoDuck/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "scripts": {
+    "test": "make test"
   }
-    
 }
