@@ -46,7 +46,7 @@ global.SetUpDatabase = function() {
         throw(err);
       }
       else {
-        Log('Database already exists.', 'green');
+        Log(color('Database already exists.', 'green'));
       }
     }
   });

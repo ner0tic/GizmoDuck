@@ -101,7 +101,7 @@ Bot.on("update_votes", OnUpdateVotes);
 Bot.on("booted_user", OnBootedUser);
 Bot.on("update_user", OnUpdateUser);
 Bot.on("add_dj", OnAddDJ);
-Bot.on("rem_dj", OnRemDJ);
+Bot.on("rem_dj", OnRemoveDJ);
 Bot.on("snagged", OnSnagged);
 Bot.on("pmmed", OnPmmed);
 Bot.on("error", OnError);
