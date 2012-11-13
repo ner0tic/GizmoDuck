@@ -168,7 +168,7 @@ global.OnRegistered = function(data) {
           DJQueue.length++;
           Set('DjQueue', JSON.stringify(DjQueue));
         }
-        bot.pm("Greetings @" + data.user[0].name + ". If you would like to DJ, please type 'q+' to get added to the queue.", data.user[0].userid);
+        bot.pm(Diction.Greeting, data.user[0].userid);
       }
     });
   } catch(e) {
@@ -180,7 +180,7 @@ global.OnDeregistered = function(data) {
     Log(color("EVENT :: Deregistered: ", "blue") + data.user[0].name + " - " + data.user[0].userid);
 
     if(CurrentSong != null) {
-      CurrentSong.listeners--;
+      CurrentSong.Listeners--;
     }
 
     var users = data.user;
